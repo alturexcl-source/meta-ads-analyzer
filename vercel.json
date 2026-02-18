@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" }
+  ]
+}
+```
+
+**2)** Guardalo como `vercel.json` en:
+```
+C:\Users\Alturex\meta-ads-analyzer\vercel.json
