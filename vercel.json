@@ -1,15 +1,5 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite",
-  "functions": {
-    "api/claude.js": {
-      "memory": 512,
-      "maxDuration": 30
-    }
-  },
   "rewrites": [
-    { "source": "/api/claude", "destination": "/api/claude.js" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!api).*)", "destination": "/index.html" }
   ]
 }
